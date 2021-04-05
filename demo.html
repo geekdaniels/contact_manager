@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Management System</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" placeholder="Type a name" v-model="searchParam" />
+        <p>{{message}}</p>
+        <ul>
+            <li v-for="contact in searchContact" :key="contact.id">
+                {{contact.first_name}}
+                {{contact.last_name}}
+                {{contact.email}}
+            </li>
+        </ul>
+    </div>
+</body>
+<!-- production version, optimized for size and speed -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="app.js"></script>
+
+</html>
