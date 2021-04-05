@@ -9,7 +9,7 @@ var app = new Vue({
         searchContact: function () {
 
             var searchResults = this.contacts
-            var searchParam = this.searchParam;
+            var searchParam = this.searchParam.toLowerCase();
             if (!searchParam) {
                 return searchResults
             }
