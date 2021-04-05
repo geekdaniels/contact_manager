@@ -1,3 +1,3 @@
 <?php 
-	header("location: /demo.html");
+	header("location: /app/");
 ?>
